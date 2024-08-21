@@ -66,4 +66,24 @@ async def suprize(ctx, minut: int, mrep='repeating...'):
         time.sleep(minut)
         await ctx.send(mrep)
 
+@bot.command()
+async def carpma(ctx, sayi: int, sayin : int):
+        islem = sayi * sayin
+        await ctx.send(islem)
+
+@bot.command()
+async def bölme(ctx, sayi: int, sayin : int):
+        islem = sayi / sayin
+        await ctx.send(islem)
+
+@bot.command()
+async def toplama(ctx, sayi: int, sayin : int):
+        islem = sayi + sayin
+        await ctx.send(islem)
+
+@bot.command()
+async def cıkarma(ctx, sayi: int, sayin : int):
+        islem = sayi - sayin
+        await ctx.send(islem)
+    
 bot.run("")
